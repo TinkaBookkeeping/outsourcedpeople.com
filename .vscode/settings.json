@@ -11,7 +11,9 @@
   "[typescript]": {
     "editor.formatOnSave": true
   },
-  "cSpell.words": [""],
+  "cSpell.words": [
+    "recaptcha"
+  ],
   "files.exclude": {
     "**/node_modules": true
   }
