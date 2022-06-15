@@ -46,6 +46,7 @@ const ContactForm = () => {
   };
   return (
     <form
+      method="post"
       onSubmit={form.onSubmit((values) => onSubmit(values))}
       netlify-honeypot="bot-field"
       data-netlify="true"
