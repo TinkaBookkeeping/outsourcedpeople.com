@@ -46,11 +46,10 @@ const ContactForm = () => {
   };
   return (
     <form
-      name="contact"
-      method="post"
+      method="POST"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      data-netlify-recaptcha="true"
+      name="contact-us"
       onSubmit={form.onSubmit((values) => onSubmit(values))}
     >
       <input
