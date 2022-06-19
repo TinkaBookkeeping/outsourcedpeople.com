@@ -42,7 +42,6 @@ const ContactForm = () => {
       body,
     })
       .then(() => {
-        console.log("Success");
         router.push("/thank-you/");
       })
       .catch((_) => alert("Error"));
@@ -58,6 +57,7 @@ const ContactForm = () => {
       <input
         required
         type="email"
+        name="email"
         className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mr-2 placeholder-gray-500"
         placeholder="Your email…"
         aria-label="Your email…"
@@ -65,6 +65,7 @@ const ContactForm = () => {
       />
       <input
         type="phone"
+        name="phone"
         className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mr-2 placeholder-gray-500"
         placeholder="Your phone number..."
         aria-label="Your phone number"
@@ -72,6 +73,7 @@ const ContactForm = () => {
       />
       <textarea
         required
+        name="message"
         className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mr-2 placeholder-gray-500 h-32"
         placeholder="Your inquiry"
         aria-label="Your inquiry..."
