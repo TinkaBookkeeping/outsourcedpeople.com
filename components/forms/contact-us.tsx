@@ -41,7 +41,10 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body,
     })
-      .then(() => router.push("/thank-you/"))
+      .then(() => {
+        console.log("Success");
+        router.push("/thank-you/");
+      })
       .catch((_) => alert("Error"));
   };
   return (
